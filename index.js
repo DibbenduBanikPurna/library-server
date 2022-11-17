@@ -51,24 +51,24 @@ async function run() {
         })
 
         //makeadmin data
-        app.put('/user/admin',  async (req, res) => {
-            //console.log('put', req.decodedEmail)
-           // const requester = req.decodedEmail;
+        // app.put('/user/admin',  async (req, res) => {
+        //     //console.log('put', req.decodedEmail)
+        //    // const requester = req.decodedEmail;
            
                
                 
-                    const user = req.body;
-                    const filter = { email: user.email }
-                    const updateDoc = { $set: { role: 'admin' } };
-                    const result = await usersCollcetion.updateOne(filter, updateDoc);
-                    // console.log(result)
-                    res.json(result)
+        //             const user = req.body;
+        //             const filter = { email: user.email }
+        //             const updateDoc = { $set: { role: 'admin' } };
+        //             const result = await usersCollcetion.updateOne(filter, updateDoc);
+        //             // console.log(result)
+        //             res.json(result)
 
                 
             
 
 
-        })
+        // })
         console.log("database connected");
        
         //get book data
